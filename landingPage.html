@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Luciano Feijão</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/a42ec9dc17.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-blue-500 to-blue-900">
+    <header class="bg-white shadow  w-full sticky top-0 z-11">
+        <div class="max-w-6xl  flex justify-between items-center w-full px-6">
+            <nav id="navbar" class="flex items-center w-full justify-between">
+                <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2016/01/Logo_topo_Site.png"
+                    alt="logo_flf">
+
+                <ul id="navbar-lista" class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+                    <li class="lista_itens">
+                        <a href="#principal">Principal</a>
+                    </li>
+                    <li class="lista-itens">
+                        <a href="#cursos">Cursos</a>
+                    </li>
+                    <li class="lista-itens">
+                        <a href="#processo">Processo Seletivo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="principal"
+            class=" min-h-screen flex items-center bg-cover bg-center bg-fixed relative rounded-b-xl border-b-4 border-b-blue-950/90 border-solid bg-[url('https://portal.lf.edu.br:8382/pluginfile.php/1/theme_moove/headerimg/1770910832/SLIDE_FLF.jpg')]">
+            <div id="overlay-hero" class="absolute inset-0 bg-blue-950/80"></div>
+            <div id="principal-container"
+                class="max-w-6xl mx-auto px-8 flex flex-col md:flex-row w-full relative z-10 items-center justify-between">
+                <div id="principal-text" class="max-w-xl space-y-6">
+                    <h3
+                        class="bg-blue-600 text-white px-4 py-2 font-bold shadow-lg animate-pulse rounded-full mb-6 mr-6">
+                        Inscrições 2026.2 Abertas - Garanta sua Vaga!</h3>
+                    <h1 class="text-4xl md:text-7xl font-bold text-blue-50">AGORA É A <span
+                            class="text-sky-500 font-extrabold">SUA VEZ</span></h1>
+                    <h2 id="hero-sub" class="text-2xl text-white/80 max-w-xl ">Construa <span
+                            class="text-sky-200 font-semibold">seu futuro</span> com cursos
+                        presenciais
+                        e EAD de
+                        qualidade
+                    </h2>
+
+                    <div id="principal-btn" class="flex gap-4 mt-6">
+                        <a id="cursos_link" href="#cursos"
+                            class="bg-sky-500 text-white px-4 py-2 rounded cursor-pointer transition hover:bg-blue-900 active:bg-blue-900">Conheça
+                            nossos
+                            cursos</a>
+                        <a id="inscrever" href="#processo"
+                            class="bg-sky-500 text-white px-4 py-2 rounded cursor-pointer transition hover:bg-blue-800 active:bg-blue-900">Inscreva-se</a>
+                    </div>
+                </div>
+                <div id="principal-video" class="w-1/2 h-auto">
+                    <video autoplay muted loop class="rounded-lg shadow-lg flex-col md:flex-row">
+                        <source src="imagens/flf-hero-video.mp4">
+                    </video>
+                </div>
+
+            </div>
+        </section>
+        <section id="cursos" class="max-w-6xl mx-auto mt-16">
+            <div id="cursos-container" class="grid mb-12">
+                <div id="cursos-text">
+                    <h2 class="text-4xl text-white font-semibold">Conheça nossos Cursos Presenciais</h2>
+                    <div class="cards-cursos grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
+                        <article id="med" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2024/08/medicina-1024x589.jpeg"
+                                alt="Medicina" class="w-full aspect-video object-cover">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Medicina</h3>
+                                <p>Curso voltado à formação médica, com foco em diagnóstico, prevenção e cuidado
+                                    integral à saúde.
+                                </p>
+                                <a href="cursos.html#med"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+
+                        <article id="enferm" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/enfermagem.jpg"
+                                alt="Enfermagem" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Enfermagem</h3>
+                                <p>Forma profissionais qualificados para assistência em saúde, com ética, técnica e
+                                    compromisso social.</p>
+                                <a href="cursos.html#enferm"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+
+                        </article>
+                        <article id="odonto" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/odonto.jpg"
+                                alt="Odontologia" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Odontologia</h3>
+                                <p>Capacita para atuação na saúde bucal, com ênfase em prevenção, diagnóstico e
+                                    reabilitação.</p>
+                                <a href="cursos.html#odonto"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="arquit" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/arquitetura.jpg"
+                                alt="Arquitetura e Urbanismo" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Arquitetura e Urbanismo</h3>
+                                <p>Forma profissionais para projetar espaços urbanos e edificações com criatividade,
+                                    técnica e sustentabilidade.
+                                </p>
+                                <a href="cursos.html#arquit"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="psico" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/psicologia.jpg"
+                                alt="Psicologia" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Psicologia</h3>
+                                <p>Curso voltado à compreensão do comportamento humano e atuação na promoção da saúde
+                                    mental.</p>
+                                <a href="cursos.html#psico"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="direito" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/direito.jpg"
+                                alt="direito" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Direito</h3>
+                                <p>Forma profissionais para atuação jurídica, com base ética, crítica e conhecimento das
+                                    normas legais.</p>
+                                <a href="cursos.html#direito"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="adm" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/11/banner_top_adm-1024x585.jpg"
+                                alt="Administração" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Administração</h3>
+                                <p>Capacita para gestão organizacional, liderança e tomada de decisões em diferentes
+                                    contextos empresariais.</p>
+                                <a href="cursos.html#adm"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer transition mt-4 hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+
+                        <article id="engen-civil" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/engenharia.jpg"
+                                alt="Engenharia Civil" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Engenharia Civil</h3>
+                                <p>Forma profissionais para planejamento, execução e gestão de obras com qualidade e
+                                    segurança.
+                                </p>
+                                <a href="cursos.html#engen-civil"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer transition mt-4 hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="cursos-ead" class="max-w-6xl mx-auto">
+            <div id="cursos-ead-container" class="grid">
+                <div id="cursos-ead-text">
+                    <h2 class="text-4xl text-white font-semibold">Conheça nossos Cursos EAD - À Distância</h2>
+                    <div class="cards-cursos grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
+                        <article id="pedag" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/pedagogia.jpg"
+                                alt="Pedagogia" class="w-full aspect-video object-cover">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Pedagogia</h3>
+                                <p>Forma educadores para atuação no ensino, gestão escolar e desenvolvimento
+                                    educacional.
+
+                                </p>
+                                <a href="cursos.html#pedag"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer transition mt-4 hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+
+                        <article id="rh" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2024/09/recursoshumanos.jpg"
+                                alt="Recursos Humanos" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Recursos Humanos</h3>
+                                <p>Capacita para gestão de pessoas, desenvolvimento organizacional e processos de
+                                    recrutamento e seleção.
+                                </p>
+                                <a href="cursos.html#rh"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer transition mt-4 hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+
+                        </article>
+                        <article id="serv_social" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2024/09/servicosocial.jpg"
+                                alt="Serviço Social" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Serviço Social</h3>
+                                <p>Forma profissionais para atuação em políticas sociais, promovendo inclusão e garantia
+                                    de direitos.</p>
+                                <a href="cursos.html#serv_social"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="adm_ead" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/administracao-1.jpg"
+                                alt="Administração EAD" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Administração</h3>
+                                <p>Desenvolve competências em gestão, planejamento e organização com flexibilidade do
+                                    ensino a distância.</p>
+                                <a href="cursos.html#adm_ead"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+                        <article id="edfis" class="card-curso bg-white rounded-lg shadow p-3">
+                            <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2025/10/educacaofisica.jpg"
+                                alt="Educação Física" class="w-full object-contain">
+                            <div class="desc-curso flex flex-col">
+                                <h3>Educação Física</h3>
+                                <p>Forma profissionais para atuação na promoção da saúde, atividade física e qualidade
+                                    de vida.</p>
+                                <a href="cursos.html#edfis"
+                                    class="bg-blue-700 text-white px-4 py-2 rounded cursor-pointer mt-4 transition hover:bg-blue-900 hover:scale-105 active:bg-blue-900 active:scale-105">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="processo" class="max-w-6xl mx-auto px-8 py-6 mt-16">
+            <div>
+                <p class="text-4xl text-white font-semibold">Processo seletivo</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
+                <article id="inscricao"
+                    class="card-processo bg-white rounded-lg shadow-md p-3 transform transition hover:scale-105 hover:-translate-y-2 hover:shadow-xl active:scale-105 active:-translate-y-2 active:shadow-xl">
+                    <h3 class="text-2xl font-bold">1. Inscrição</h3>
+                    <p>Realize sua inscrição online escolhendo o curso e turno desejados</p>
+                </article>
+                <article id="ingresso"
+                    class="card-processo bg-white rounded-lg shadow p-3 transform transition hover:scale-105 hover:-translate-y-2 hover:shadow-xl active:scale-105 active:-translate-y-2 active:shadow-xl">
+                    <h3 class="text-2xl font-bold">2. Forma de ingresso</h3>
+                    <p>Escolha entre vestibular online ou presencial, ou utilize sua nota do
+                        ENEM</p>
+                </article>
+                <article id="resultado"
+                    class="card-processo bg-white rounded-lg shadow p-3 transform transition hover:scale-105 hover:-translate-y-2 hover:shadow-xl active:scale-105 active:-translate-y-2 active:shadow-xl">
+                    <h3 class="text-2xl font-bold">3. Resultado</h3>
+                    <p>Confira o resultado do processo seletivo</p>
+                </article>
+                <article id="matricula"
+                    class="card-processo bg-white rounded-lg shadow p-3 transform transition hover:scale-105 hover:-translate-y-2 hover:shadow-xl active:scale-105 active:-translate-y-2 active:shadow-xl">
+                    <h3 class="text-2xl font-bold">4. Matrícula</h3>
+                    <p>Envie os documentos e garanta sua vaga</p>
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="bg-blue-950 mt-16">
+        <div class=" text-lg text-white mx-auto max-w-6xl px-8">
+            <p>Redes sociais</p>
+            <a target="_blank" href="https://www.facebook.com/flfeijao"><i class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://twitter.com/flfeijao"><i class="fa-brands fa-x-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCwIMJ6LjdGeur_em-2JbQ7w"> <i
+                    class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://www.instagram.com/flfeijao/"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
