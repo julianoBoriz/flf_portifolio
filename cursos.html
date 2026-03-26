@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,24 +11,25 @@
 
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-blue-500 to-blue-900">
+<body class="min-h-screen bg-gradient-to-b from-blue-500 to-blue-900 scroll-smooth">
     <header class="bg-white shadow  w-full sticky top-0 z-11">
         <div class="max-w-6xl  flex justify-between items-center w-full px-6">
             <nav id="navbar" class="flex items-center w-full justify-between">
                 <img src="https://flucianofeijao.com.br/flf/wp-content/uploads/2016/01/Logo_topo_Site.png"
                     alt="logo_flf">
-                <ul id="navbar-lista" class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+
+                <ul id="navbar-lista" class="top-full left-0 w-full absolute bg-white shadow-md p-4 space-y-4 hidden flex-col md:absolute md:left-1/2 md:-translate-x-1/2 md:flex md:flex-row  md:bg-transparent md:w-auto md:justify-center md:top-auto md:shadow-none md:space-y-0 md:gap-6">
                     <li class="lista_itens">
-                        <a href="index.html#principal
-                        ">Principal</a>
+                        <a href="index.html#principal" class="py-2 border-b block hover:text-blue-500 transition md:border-none active:bg-blue-100 active:text-blue-600">Principal</a>
                     </li>
                     <li class="lista-itens">
-                        <a href="#cursos">Cursos</a>
+                        <a href="index.html#cursos" class="py-2 border-b block hover:text-blue-500 transition md:border-none active:bg-blue-100 active:text-blue-600">Cursos</a>
                     </li>
                     <li class="lista-itens">
-                        <a href="#processo">Processo Seletivo</a>
+                        <a href="index.html#processo" class="py-2 border-b block hover:text-blue-500 transition md:border-none active:bg-blue-100 active:text-blue-600">Processo Seletivo</a>
                     </li>
                 </ul>
+                <button id="menu-btn" class="md:hidden text-2xl p-2">☰</button>
             </nav>
         </div>
     </header>
@@ -649,16 +650,19 @@
         </section>
     </main>
     <footer class="bg-blue-950 mt-16">
-        <div class=" text-lg text-white mx-auto max-w-6xl px-8">
-            <p>Redes sociais</p>
-            <a target="_blank" href="https://www.facebook.com/flfeijao"><i class="fa-brands fa-facebook-f"></i></a>
-            <a target="_blank" href="https://twitter.com/flfeijao"><i class="fa-brands fa-x-twitter"></i></a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCwIMJ6LjdGeur_em-2JbQ7w"> <i
-                    class="fa-brands fa-youtube"></i></a>
-            <a target="_blank" href="https://www.instagram.com/flfeijao/"><i class="fa-brands fa-instagram"></i></a>
+        <div class=" text-lg text-white mx-auto max-w-6xl px-8 flex gap-4 justify-start">
+            <p>Redes sociais:</p>
+            <a class="p-2 inline-flex items-center justify-center rounded-full" target="_blank" href="https://www.facebook.com/flfeijao"><i class="fa-brands fa-facebook-f text-2xl"></i></a>
+            <a class="p-2 inline-flex items-center justify-center rounded-full" target="_blank" href="https://twitter.com/flfeijao"><i class="fa-brands fa-x-twitter text-2xl"></i></a>
+            <a class="p-2 inline-flex items-center justify-center rounded-full" target="_blank" href="https://www.youtube.com/channel/UCwIMJ6LjdGeur_em-2JbQ7w"> <i
+                    class="fa-brands fa-youtube text-2xl"></i></a>
+            <a class="p-2 inline-flex items-center justify-center rounded-full" target="_blank" href="https://www.instagram.com/flfeijao/"><i class="fa-brands fa-instagram text-2xl"></i></a>
+            <div class="text-center mt-24">Rua José Lopes Ponte, 400 | Dom Expedito | Sobral-CE | CEP: 62050-215 | (88) 3112-1001
+
+                © 2026 - Francisco Juliano Sousa Boriz</div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
